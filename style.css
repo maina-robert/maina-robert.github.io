@@ -243,10 +243,8 @@ img { max-width: 100%; display: block; }
   text-align: center;
   padding: 120px 24px 80px;
   overflow: hidden;
-  background: radial-gradient(ellipse at 20% 50%, rgba(79, 142, 247, 0.12) 0%, transparent 60%),
-              radial-gradient(ellipse at 80% 20%, rgba(167, 139, 250, 0.1) 0%, transparent 60%),
-              radial-gradient(ellipse at 50% 100%, rgba(34, 211, 238, 0.08) 0%, transparent 60%),
-              var(--navy);
+  background: linear-gradient(rgba(10, 14, 26, 0.75), rgba(10, 14, 26, 0.95)),
+              url('assets/hero-bg.png') center/cover no-repeat;
 }
 .hero-particles {
   position: absolute;
