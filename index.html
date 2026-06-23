@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Robert Maina – Data Analyst & Economics Graduate. Portfolio showcasing data analysis expertise, Power BI dashboards, and business intelligence skills for German employers." />
+  <meta name="keywords" content="Data Analyst, Power BI, SQL, SPSS, Excel, Stuttgart, Germany, Economics, Statistics" />
+  <meta name="author" content="Robert Maina" />
+  <meta property="og:title" content="Robert Maina | Data Analyst Portfolio" />
+  <meta property="og:description" content="Economics & Statistics Graduate | Power BI | SQL | SPSS | Stuttgart, Germany" />
+  <meta property="og:type" content="website" />
+  <title>Robert Maina | Data Analyst Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=2" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-brand">
+      <span class="brand-initials">RM</span>
+      <span class="brand-name">Robert Maina</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu öffnen">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link active">Start</a></li>
+      <li><a href="#about" class="nav-link">Über mich</a></li>
+      <li><a href="#experience" class="nav-link">Erfahrung</a></li>
+      <li><a href="#skills" class="nav-link">Fähigkeiten</a></li>
+      <li><a href="#dashboards" class="nav-link">Dashboards</a></li>
+      <li><a href="#education" class="nav-link">Bildung</a></li>
+      <li><a href="#contact" class="nav-link">Kontakt</a></li>
+    </ul>
+    <div class="lang-switcher" id="lang-switcher">
+      <button class="lang-toggle" id="lang-toggle" type="button" aria-haspopup="menu" aria-expanded="false" aria-label="Language switcher">
+        <span class="lang-current" id="lang-current">DE</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+      </button>
+      <div class="lang-menu" id="lang-menu" role="menu" aria-label="Language selection">
+        <button class="lang-option active" type="button" data-lang="de" role="menuitem">Deutsch</button>
+        <button class="lang-option" type="button" data-lang="en" role="menuitem">English</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Verfügbar für neue Möglichkeiten • Deutschlandweit
+      </div>
+      <div class="hero-photo-wrapper">
+        <div class="hero-photo">
+          <img src="assets/profile2.png" alt="Robert Maina – Data Analyst" id="profile-img" onerror="this.style.display='none'; document.getElementById('profile-initials').style.display='flex'" />
+          <div class="profile-initials" id="profile-initials">RM</div>
+        </div>
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          Open to Work
+        </div>
+      </div>
+      <h1 class="hero-title">
+        Robert <span class="gradient-text">Maina</span>
+      </h1>
+      <p class="hero-subtitle">Data Analyst &amp; Economics Graduate</p>
+      <p class="hero-tagline">
+        B.Sc. Economics &amp; Statistics · Power BI · SQL · SPSS · Excel
+      </p>
+      <div class="hero-location">
+        <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5z"/></svg>
+        Stuttgart, Deutschland (Deutschlandweit einsatzbereit)
+      </div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary" id="contact-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          Kontakt aufnehmen
+        </a>
+        <a href="#dashboards" class="btn btn-secondary" id="dashboard-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          Dashboards ansehen
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="4">0</span>
+          <span class="stat-label">Jahre Erfahrung</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="5">0</span>
+          <span class="stat-label">Tools beherrscht</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Sprachen</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scrollen</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Profil</span>
+        <h2 class="section-title">Über mich</h2>
+        <p class="section-subtitle">Analytisch denken. Daten verstehen. Entscheidungen ermöglichen.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          </div>
+          <h3>Persönliches Profil</h3>
+          <p>
+            Analytisch denkender Wirtschafts- und Statistikabsolvent mit nachgewiesener Erfahrung in Datenerhebung, -analyse und Berichterstellung. Ich bringe Leidenschaft für datengetriebene Entscheidungsfindung mit und bin motiviert, meine Fähigkeiten in einem deutschen Unternehmen einzusetzen.
+          </p>
+          <ul class="profile-details">
+            <li><strong>Geburtsdatum:</strong> 09.11.1995, Nairobi, Kenia</li>
+            <li><strong>Standort:</strong> Stuttgart (Deutschlandweit einsatzbereit)</li>
+            <li><strong>Familienstand:</strong> Ledig</li>
+            <li><strong>Staatsangehörigkeit:</strong> Kenianisch</li>
+          </ul>
+        </div>
+        <div class="about-card glass-card">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h3>Meine Stärken</h3>
+          <div class="strengths-grid">
+            <div class="strength-item">
+              <div class="strength-icon">📊</div>
+              <span>Datenanalyse</span>
+            </div>
+            <div class="strength-item">
+              <div class="strength-icon">📈</div>
+              <span>Visualisierung</span>
+            </div>
+            <div class="strength-item">
+              <div class="strength-icon">🔍</div>
+              <span>Datenqualität</span>
+            </div>
+            <div class="strength-item">
+              <div class="strength-icon">🗄️</div>
+              <span>Datenbankarbeit</span>
+            </div>
+            <div class="strength-item">
+              <div class="strength-icon">📋</div>
+              <span>Berichterstellung</span>
+            </div>
+            <div class="strength-item">
+              <div class="strength-icon">🚀</div>
+              <span>Eigeninitiative</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card glass-card highlight-card">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Warum ich?</h3>
+          <p>
+            Als Gründer eines Logistikunternehmens und erfahrener Datenanalyst verbinde ich unternehmerisches Denken mit technischer Kompetenz. Ich bin selbstmotiviert, detailorientiert und lerne schnell – Eigenschaften, die ich durch die eigenständige Finanzierung eines intensiven Sprachkurses unter Beweis gestellt habe.
+          </p>
+          <a href="assets/zab-certificate.png" target="_blank" class="highlight-badge" style="text-decoration: none; cursor: pointer;">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            ZAB-anerkannter Abschluss (gleichwertig mit deutschem Hochschulabschluss)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Karriere</span>
+        <h2 class="section-title">Berufliche Erfahrung</h2>
+        <p class="section-subtitle">Ein vielseitiger Werdegang mit Fokus auf Datenanalyse und Unternehmertum</p>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot active">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.35C18 2.53 15.48 0 12.35 0c-1.7 0-3.23.72-4.35 1.85C6.88.72 5.36 0 3.65 0 .52 0-2 2.53-2 5.65c0 .47.11.91.18 1.35H-2v2h24V6z"/></svg>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div class="timeline-date">10/2025 – Heute</div>
+              <div class="timeline-badge current">Aktuell</div>
+            </div>
+            <h3 class="timeline-title">Küchenhilfe / Spüler</h3>
+            <p class="timeline-company">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="icon-xs"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+              Knitz Gastronomy, Stuttgart
+            </p>
+            <p class="timeline-desc">Überbrückungstätigkeit zur Finanzierung des Lebensunterhalts und der beruflichen Integration in Deutschland.</p>
+            <div class="timeline-achievement">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              Eigenständige Finanzierung eines 7-monatigen Super-Intensiv-Sprachkurses (B2-Niveau)
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot data">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div class="timeline-date">01/2025 – 05/2025</div>
+              <div class="timeline-badge data-badge">Datenanalyse</div>
+            </div>
+            <h3 class="timeline-title">Programmdatenassistent</h3>
+            <p class="timeline-company">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="icon-xs"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+              KE-371 RGC Child and Youth Development Centre, Nairobi
+            </p>
+            <ul class="timeline-bullets">
+              <li>Analyse von Programmdaten für über 130 Teilnehmer</li>
+              <li>Digitalisierung von 400+ Papierakten – Reduzierung der Dokumentenabrufzeit um 50%</li>
+              <li>100% Datenintegrität bei der Migration in digitale Datenbanken sichergestellt</li>
+              <li>Kommunikation mit Teilnehmern und Sponsoren</li>
+            </ul>
+            <div class="timeline-tools">
+              <span class="tool-tag">Power BI</span>
+              <span class="tool-tag">Excel</span>
+              <span class="tool-tag">Datenpflege</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot business">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.35C18 2.53 15.48 0 12.35 0c-1.7 0-3.23.72-4.35 1.85C6.88.72 5.36 0 3.65 0 .52 0-2 2.53-2 5.65c0 .47.11.91.18 1.35H-2v2h24V6z"/></svg>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div class="timeline-date">08/2024 – 05/2025</div>
+              <div class="timeline-badge business-badge">Unternehmer</div>
+            </div>
+            <h3 class="timeline-title">Einzelunternehmer – Logistik &amp; Transport</h3>
+            <p class="timeline-company">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="icon-xs"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+              Mwealuxe Logistics, Nairobi, Kenia (Reg.-Nr. BN-20SJLQVE)
+            </p>
+            <ul class="timeline-bullets">
+              <li>Gründung und operative Leitung eines registrierten Logistikunternehmens</li>
+              <li>Eigenverantwortliche Planung von Transportabläufen</li>
+              <li>Proaktives Zeitmanagement und Problemlösungskompetenz in dynamischem Umfeld</li>
+            </ul>
+            <div class="timeline-tools">
+              <span class="tool-tag">Unternehmensführung</span>
+              <span class="tool-tag">Logistik</span>
+              <span class="tool-tag">Zeitmanagement</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot data">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div class="timeline-date">09/2023 – 10/2024</div>
+              <div class="timeline-badge data-badge">Forschung</div>
+            </div>
+            <h3 class="timeline-title">Wissenschaftlicher Mitarbeiter</h3>
+            <p class="timeline-company">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="icon-xs"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+              Instream Consulting Group, Nairobi
+            </p>
+            <ul class="timeline-bullets">
+              <li>Projektüberwachung und Datenerhebung</li>
+              <li>Statistische Datenanalyse mit SPSS und SQL</li>
+              <li>Erstellung analytischer Berichte mit 99,5% Erfolgsrate</li>
+            </ul>
+            <div class="timeline-tools">
+              <span class="tool-tag">SPSS</span>
+              <span class="tool-tag">SQL</span>
+              <span class="tool-tag">Berichterstellung</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot volunteer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div class="timeline-date">01/2022 – 08/2023</div>
+              <div class="timeline-badge volunteer-badge">Ehrenamt</div>
+            </div>
+            <h3 class="timeline-title">Ehrenamtlicher Datenassistent</h3>
+            <p class="timeline-company">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="icon-xs"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+              Redeemed Integrated Development Agency, Nairobi
+            </p>
+            <ul class="timeline-bullets">
+              <li>Verwaltung und Pflege des Datensystems sowie Dateneingabe</li>
+              <li>Unterstützung bei monatlichen Datenüberprüfungen</li>
+              <li>Teilnahme an Datenqualitätsbewertungen (DQA)</li>
+            </ul>
+            <div class="timeline-tools">
+              <span class="tool-tag">Dateneingabe</span>
+              <span class="tool-tag">DQA</span>
+              <span class="tool-tag">Datenpflege</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Kompetenzen</span>
+        <h2 class="section-title">Fähigkeiten &amp; Kenntnisse</h2>
+        <p class="section-subtitle">Technische Kompetenz trifft auf analytisches Denkvermögen</p>
+      </div>
+      <div class="skills-layout">
+        <!-- Technical Skills -->
+        <div class="skills-group glass-card">
+          <h3 class="skills-group-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            IT-Kenntnisse
+          </h3>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-name">Microsoft Excel</span>
+                <span class="skill-level">Fortgeschritten</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="88" style="--target-width: 88%"></div>
+              </div>
+              <div class="skill-tags-row">
+                <span class="mini-tag">Pivot-Tabellen</span>
+                <span class="mini-tag">SVERWEIS/XVERWEIS</span>
+                <span class="mini-tag">Datenanalyse</span>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-name">Power BI</span>
+                <span class="skill-level">Gute Kenntnisse</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="60" style="--target-width: 60%"></div>
+              </div>
+              <div class="skill-tags-row">
+                <span class="mini-tag">Dashboards</span>
+                <span class="mini-tag">Datenvisualisierung</span>
+                <span class="mini-tag">BI-Systeme</span>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-name">IBM SPSS Statistics</span>
+                <span class="skill-level">Fortgeschritten</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80" style="--target-width: 80%"></div>
+              </div>
+              <div class="skill-tags-row">
+                <span class="mini-tag">Statistische Analyse</span>
+                <span class="mini-tag">Hypothesentests</span>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-name">SQL</span>
+                <span class="skill-level">Anfänger</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="35" style="--target-width: 35%"></div>
+              </div>
+              <div class="skill-tags-row">
+                <span class="mini-tag">Datenbankabfragen</span>
+                <span class="mini-tag">Datenextraktion</span>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-name">MS PowerPoint</span>
+                <span class="skill-level">Fortgeschritten</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="78" style="--target-width: 78%"></div>
+              </div>
+              <div class="skill-tags-row">
+                <span class="mini-tag">Präsentationen</span>
+                <span class="mini-tag">Berichterstellung</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Language Skills -->
+        <div class="skills-group glass-card">
+          <h3 class="skills-group-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Sprachkenntnisse
+          </h3>
+          <div class="language-cards">
+            <div class="lang-card">
+              <div class="lang-flag">🇬🇧</div>
+              <div class="lang-info">
+                <div class="lang-name">Englisch</div>
+                <div class="lang-level-label">Verhandlungssicher</div>
+                <div class="lang-level-bar">
+                  <div class="lang-dots">
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                  </div>
+                  <span class="cefr-badge">C1–C2</span>
+                </div>
+              </div>
+            </div>
+            <div class="lang-card">
+              <div class="lang-flag">🇩🇪</div>
+              <div class="lang-info">
+                <div class="lang-name">Deutsch</div>
+                <div class="lang-level-label">Grundkenntnisse → Ziel B2</div>
+                <div class="lang-level-bar">
+                  <div class="lang-dots">
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot progress"></span>
+                    <span class="dot future"></span>
+                    <span class="dot future"></span>
+                    <span class="dot future"></span>
+                  </div>
+                  <span class="cefr-badge progress-badge">A2 → B2</span>
+                </div>
+                <div class="lang-roadmap">
+                  <div class="roadmap-item done">✓ A2 abgeschlossen (DeutschAkademie)</div>
+                  <div class="roadmap-item active">🎯 B1 – Start nächsten Monat</div>
+                  <div class="roadmap-item future">📅 B2 – Ziel</div>
+                </div>
+              </div>
+            </div>
+            <div class="lang-card">
+              <div class="lang-flag">🇰🇪</div>
+              <div class="lang-info">
+                <div class="lang-name">Swahili</div>
+                <div class="lang-level-label">Muttersprache</div>
+                <div class="lang-level-bar">
+                  <div class="lang-dots">
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                  </div>
+                  <span class="cefr-badge native-badge">Muttersprache</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-group glass-card soft-skills-card">
+          <h3 class="skills-group-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Soft Skills
+          </h3>
+          <div class="soft-skills-grid">
+            <div class="soft-skill">
+              <div class="soft-skill-icon">🎯</div>
+              <span>Detailorientierung</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-icon">🧩</div>
+              <span>Problemlösung</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-icon">⚡</div>
+              <span>Eigeninitiative</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-icon">🤝</div>
+              <span>Teamarbeit</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-icon">⏱️</div>
+              <span>Zeitmanagement</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-icon">📢</div>
+              <span>Kommunikation</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-icon">🌍</div>
+              <span>Interkulturalität</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-icon">💡</div>
+              <span>Analytisches Denken</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DASHBOARDS SECTION ===== -->
+  <section id="dashboards" class="section dashboards-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Datenanalyse-Portfolio</h2>
+        <p class="section-subtitle">Interaktive Visualisierungen, die meine analytischen Fähigkeiten demonstrieren</p>
+      </div>
+      <div class="dashboard-tabs">
+        <button class="dash-tab active" data-tab="overview" id="tab-overview">📊 Übersicht</button>
+        <button class="dash-tab" data-tab="skills-chart" id="tab-skills">💻 Tech-Stack</button>
+        <button class="dash-tab" data-tab="timeline-chart" id="tab-timeline">📅 Karriere</button>
+        <button class="dash-tab" data-tab="language-chart" id="tab-language">🌍 Sprachen</button>
+      </div>
+
+      <div class="dashboard-content">
+        <!-- Overview Tab -->
+        <div class="dash-panel active" id="panel-overview">
+          <div class="kpi-grid">
+            <div class="kpi-card glass-card">
+              <div class="kpi-icon blue">📊</div>
+              <div class="kpi-value counter" data-target="400">0</div>
+              <div class="kpi-label">Digitalisierte Datensätze</div>
+              <div class="kpi-trend up">↑ 50% Zeitersparnis</div>
+            </div>
+            <div class="kpi-card glass-card">
+              <div class="kpi-icon green">👥</div>
+              <div class="kpi-value counter" data-target="130">0</div>
+              <div class="kpi-label">Analysierte Teilnehmer</div>
+              <div class="kpi-trend up">↑ 100% Datenintegrität</div>
+            </div>
+            <div class="kpi-card glass-card">
+              <div class="kpi-icon purple">✅</div>
+              <div class="kpi-value">99.5%</div>
+              <div class="kpi-label">Berichtserfolgsrate</div>
+              <div class="kpi-trend up">↑ Stakeholder-Zufriedenheit</div>
+            </div>
+            <div class="kpi-card glass-card">
+              <div class="kpi-icon orange">📅</div>
+              <div class="kpi-value counter" data-target="4">0</div>
+              <div class="kpi-label">Jahre Datenerfahrung</div>
+              <div class="kpi-trend up">↑ Mehrere Sektoren</div>
+            </div>
+          </div>
+          <div class="chart-container glass-card">
+            <h3 class="chart-title">Projekterfahrung nach Bereich</h3>
+            <canvas id="overviewChart" height="280"></canvas>
+          </div>
+        </div>
+
+        <!-- Tech Skills Chart Tab -->
+        <div class="dash-panel" id="panel-skills-chart">
+          <div class="chart-row">
+            <div class="chart-container glass-card">
+              <h3 class="chart-title">Technische Fähigkeiten – Radar</h3>
+              <canvas id="radarChart" height="300"></canvas>
+            </div>
+            <div class="chart-container glass-card">
+              <h3 class="chart-title">Tool-Nutzung pro Projekt</h3>
+              <canvas id="toolChart" height="300"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Career Timeline Tab -->
+        <div class="dash-panel" id="panel-timeline-chart">
+          <div class="chart-container glass-card">
+            <h3 class="chart-title">Karriereverlauf &amp; Kompetenzen</h3>
+            <canvas id="timelineChart" height="300"></canvas>
+          </div>
+        </div>
+
+        <!-- Language Chart Tab -->
+        <div class="dash-panel" id="panel-language-chart">
+          <div class="chart-row">
+            <div class="chart-container glass-card">
+              <h3 class="chart-title">Sprachkompetenz (CEFR)</h3>
+              <canvas id="langChart" height="300"></canvas>
+            </div>
+            <div class="lang-progress-card glass-card">
+              <h3 class="chart-title">Deutsch-Lernfortschritt</h3>
+              <div class="german-progress">
+                <div class="progress-step completed">
+                  <div class="step-circle">A1</div>
+                  <div class="step-info">
+                    <span class="step-label">Anfänger</span>
+                    <span class="step-status done-status">✓ Erreicht</span>
+                  </div>
+                </div>
+                <div class="progress-connector filled"></div>
+                <div class="progress-step completed">
+                  <div class="step-circle">A2</div>
+                  <div class="step-info">
+                    <span class="step-label">Grundlagen</span>
+                    <span class="step-status done-status">✓ Erreicht</span>
+                  </div>
+                </div>
+                <div class="progress-connector partial"></div>
+                <div class="progress-step active-step">
+                  <div class="step-circle pulse-step">B1</div>
+                  <div class="step-info">
+                    <span class="step-label">Mittelstufe</span>
+                    <span class="step-status in-progress">🎯 Start nächsten Monat</span>
+                  </div>
+                </div>
+                <div class="progress-connector empty"></div>
+                <div class="progress-step future-step">
+                  <div class="step-circle future-circle">B2</div>
+                  <div class="step-info">
+                    <span class="step-label">Gehobene Mittelstufe</span>
+                    <span class="step-status future-status">📅 Zukünftiges Ziel</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Bildung</span>
+        <h2 class="section-title">Akademische Laufbahn</h2>
+        <p class="section-subtitle">Solide akademische Grundlage in Wirtschaft und Statistik</p>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card glass-card featured-edu">
+          <div class="edu-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-body">
+            <div class="edu-period">09/2016 – 12/2020</div>
+            <h3 class="edu-degree">Bachelor of Science</h3>
+            <h4 class="edu-major">Economics and Statistics (B.Sc.)</h4>
+            <p class="edu-school">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="icon-xs"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+              Maasai Mara University, Narok, Kenia
+            </p>
+            <p class="edu-result">Abschluss: Second Class Honours (Lower Division)</p>
+            <div class="edu-highlight">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              Von der ZAB als gleichwertig mit einem deutschen Hochschulabschluss anerkannt
+            </div>
+            <div style="margin-top: 12px; margin-bottom: 16px; display: flex; gap: 8px; flex-wrap: wrap;">
+              <a href="assets/zab-certificate.png" target="_blank" class="btn btn-secondary" style="font-size: 0.8rem; padding: 8px 16px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-sm"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                ZAB-Zeugnisbewertung (Seite 1)
+              </a>
+              <a href="assets/zab-certificate1.png" target="_blank" class="btn btn-secondary" style="font-size: 0.8rem; padding: 8px 16px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-sm"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                ZAB-Zeugnisbewertung (Seite 2)
+              </a>
+            </div>
+            <div class="edu-subjects">
+              <span class="subject-tag">Wirtschaftsstatistik</span>
+              <span class="subject-tag">Datenanalyse</span>
+              <span class="subject-tag">Ökonometrie</span>
+              <span class="subject-tag">Finanzgrundlagen</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-card glass-card">
+          <div class="edu-icon-wrap secondary-edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+          </div>
+          <div class="edu-body">
+            <div class="edu-period">2012 – 2015</div>
+            <h3 class="edu-degree">Kenya Certificate of Secondary Education</h3>
+            <h4 class="edu-major">KCSE</h4>
+            <p class="edu-school">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="icon-xs"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+              Kinyago Dandora Secondary School, Nairobi, Kenia
+            </p>
+          </div>
+        </div>
+        <div class="edu-card glass-card lang-course-card">
+          <div class="edu-icon-wrap lang-edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="edu-body">
+            <div class="edu-period">Aktuell</div>
+            <h3 class="edu-degree">Intensivkurs Deutsch</h3>
+            <h4 class="edu-major">A2 abgeschlossen → Start B1</h4>
+            <p class="edu-school">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="icon-xs"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+              DeutschAkademie
+            </p>
+            <div class="course-milestones">
+              <div class="milestone">
+                <span class="milestone-dot done-dot" style="background: var(--green); box-shadow: 0 0 8px var(--green);"></span>
+                A2 erfolgreich abgeschlossen
+              </div>
+              <div class="milestone">
+                <span class="milestone-dot active-dot"></span>
+                B1-Kurs beginnt nächsten Monat
+              </div>
+              <div class="milestone" style="margin-top: 6px;">
+                <span class="milestone-dot future-dot"></span>
+                B2-Kurs (Zukünftiges Ziel)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BUSINESS SECTION ===== -->
+  <section id="business" class="section business-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Unternehmergeist</span>
+        <h2 class="section-title">Business Mindset</h2>
+        <p class="section-subtitle">Mehr als Datenanalyse – ich denke unternehmerisch</p>
+      </div>
+      <div class="business-grid">
+        <div class="business-card glass-card">
+          <div class="business-number">01</div>
+          <div class="business-icon">🏢</div>
+          <h3>Unternehmensgründung</h3>
+          <p>Gründung und Leitung von Mwealuxe Logistics – einem registrierten Transportunternehmen (Reg.-Nr. BN-20SJLQVE). Erfahrung in Unternehmensführung, operativer Planung und Ressourcenmanagement.</p>
+          <div style="margin-top: 20px;">
+            <a href="assets/mwealuxe-certificate.png" target="_blank" class="btn btn-secondary" style="font-size: 0.8rem; padding: 10px 16px; width: 100%; justify-content: center;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-sm"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              Zertifikat ansehen
+            </a>
+          </div>
+        </div>
+        <div class="business-card glass-card">
+          <div class="business-number">02</div>
+          <div class="business-icon">📊</div>
+          <h3>Datengetriebene Entscheidungen</h3>
+          <p>Anwendung statistischer Methoden und Visualisierungstools zur Unterstützung datenbasierter Geschäftsentscheidungen in gemeinnützigen und kommerziellen Projekten.</p>
+        </div>
+        <div class="business-card glass-card">
+          <div class="business-number">03</div>
+          <div class="business-icon">🎯</div>
+          <h3>Zielorientierung</h3>
+          <p>Eigenfinanzierung eines intensiven Sprachkurses durch Berufstätigkeit in Deutschland – demonstriert Selbstmotivation, Resilienz und strategische Planung.</p>
+        </div>
+        <div class="business-card glass-card">
+          <div class="business-number">04</div>
+          <div class="business-icon">🌍</div>
+          <h3>Interkulturelle Kompetenz</h3>
+          <p>Berufserfahrung in internationalen NGOs und in Deutschland. Fähigkeit zur effektiven Kommunikation und Zusammenarbeit in multikulturellen Umgebungen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Kontakt</span>
+        <h2 class="section-title">Lassen Sie uns sprechen</h2>
+        <p class="section-subtitle">Ich freue mich auf Ihre Nachricht – auf Deutsch oder Englisch</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info glass-card">
+          <h3>Kontaktdaten</h3>
+          <div class="contact-items">
+            <a href="mailto:kimanirobert00@gmail.com" class="contact-item" id="email-link">
+              <div class="contact-icon email-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-label">E-Mail</span>
+                <span class="contact-value">kimanirobert00@gmail.com</span>
+              </div>
+            </a>
+          
+          </div>
+          <div class="availability-badge">
+            <div class="avail-dot"></div>
+            <div>
+              <strong>Verfügbar für:</strong> Vollzeit, Teilzeit, Praktikum<br/>
+              <small>Branchen: Beratung, Controlling, Business Intelligence, NGO</small>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form glass-card">
+          <h3>Nachricht senden</h3>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Name *</label>
+              <input type="text" id="contact-name" name="name" placeholder="Ihr vollständiger Name" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">E-Mail *</label>
+              <input type="email" id="contact-email" name="email" placeholder="ihre@email.de" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-company">Unternehmen</label>
+              <input type="text" id="contact-company" name="company" placeholder="Ihr Unternehmen (optional)" />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Nachricht *</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Wie kann ich Ihnen helfen? Ich freue mich auf Ihre Anfrage..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="send-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Nachricht senden
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="brand-initials">RM</span>
+          <div>
+            <div class="footer-name">Robert Maina</div>
+            <div class="footer-title">Data Analyst | Stuttgart, Deutschland</div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Start</a>
+          <a href="#experience">Erfahrung</a>
+          <a href="#skills">Fähigkeiten</a>
+          <a href="#dashboards">Dashboards</a>
+          <a href="#contact">Kontakt</a>
+        </div>
+        <div class="footer-copy">
+          © 2026 Robert Maina. Alle Rechte vorbehalten.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js?v=2"></script>
+</body>
+</html>
